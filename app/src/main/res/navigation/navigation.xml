@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.srndpty.neobisandroidchapter8.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.srndpty.neobisandroidchapter8.ui.registration.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" />
+    <fragment
+        android:id="@+id/addNumberFragment"
+        android:name="com.srndpty.neobisandroidchapter8.ui.registration.AddNumberFragment"
+        android:label="fragment_add_number"
+        tools:layout="@layout/fragment_add_number" />
+    <fragment
+        android:id="@+id/createPasswordFragment"
+        android:name="com.srndpty.neobisandroidchapter8.ui.registration.CreatePasswordFragment"
+        android:label="fragment_create_password"
+        tools:layout="@layout/fragment_create_password" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.srndpty.neobisandroidchapter8.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.srndpty.neobisandroidchapter8.ui.products.AddProductFragment"
+        android:label="fragment_add_product"
+        tools:layout="@layout/fragment_add_product" />
+    <fragment
+        android:id="@+id/editProductFragment"
+        android:name="com.srndpty.neobisandroidchapter8.ui.products.EditProductFragment"
+        android:label="fragment_edit_product"
+        tools:layout="@layout/fragment_edit_product" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.srndpty.neobisandroidchapter8.ui.profile.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/likedProductsFragment"
+        android:name="com.srndpty.neobisandroidchapter8.ui.products.LikedProductsFragment"
+        android:label="fragment_liked_products"
+        tools:layout="@layout/fragment_liked_products" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.srndpty.neobisandroidchapter8.ui.products.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.srndpty.neobisandroidchapter8.ui.products.ProductDetailsFragment"
+        android:label="fragment_product_details"
+        tools:layout="@layout/fragment_product_details" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.srndpty.neobisandroidchapter8.ui.main.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/myProductsFragment"
+        android:name="com.srndpty.neobisandroidchapter8.ui.products.MyProductsFragment"
+        android:label="fragment_my_products"
+        tools:layout="@layout/fragment_my_products" />
+</navigation>

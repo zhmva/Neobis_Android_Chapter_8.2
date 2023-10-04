@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Neobis Android Chapter 8</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="userName">Имя пользователя</string>
+    <string name="password">Пароль</string>
+    <string name="enter">Войти</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="enter_phoneNumber">Введите номер телефона</string>
+    <string name="msg">Мы отправим вам СМС с кодом подтверждения</string>
+    <string name="next">Далее</string>
+    <string name="error_msg_number">Данный номер уже зарегистрирован</string>
+    <string name="hint">+996 (000) 000 000</string>
+    <string name="FullDesc">Детальное описание</string>
+    <string name="shortDesc">Краткое описание</string>
+    <string name="price">Цена</string>
+    <string name="name">Имя</string>
+    <string name="email">Электронная почта</string>
+    <string name="add_phone_number">Добавить номер</string>
+    <string name="birthday">Дата рождения</string>
+    <string name="user_name">Имя пользователя</string>
+    <string name="surname">Фамилия</string>
+    <string name="choose_photo">Выбрать фото</string>
+    <string name="liked">Понравившиеся</string>
+    <string name="empty">Ой пусто!</string>
+    <string name="mobi_market">MOBI MARKET</string>
+    <string name="title_rv">Title</string>
+    <string name="price_rv">Price</string>
+    <string name="_100">100</string>
+    <string name="registration">Регистрация</string>
+    <string name="finish_registration">Завершить регистрацию</string>
+    <string name="log_out">Выйти</string>
+    <string name="my_products">Мои продукты</string>
+    <string name="username">Имя пользователя</string>
+    <string name="profile">Профиль</string>
+    <string name="description">Описание</string>
+    <string name="detail_description">Детальное описание</string>
+    <string name="title_productDetail">Title</string>
+    <string name="like">Нpавится: 1М</string>
+    <string name="my_product">Мои товары</string>
+    <string name="create_password">Придумайте пароль</string>
+    <string name="passwordRequirements">Минимальная длина — 8 символов. Для надежности пароль должен содержать буквы и цифры.</string>
+    <string name="passwords_are_not_same">Пароли не сопадают</string>
+
+</resources>

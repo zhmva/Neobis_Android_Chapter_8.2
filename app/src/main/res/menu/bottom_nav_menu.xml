@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/mainScreen"
+        android:icon="@drawable/ic_home"
+        android:title="Главная" />
+
+    <item android:id="@+id/walletScreen"
+        android:icon="@drawable/ic_wallet"
+        android:title="Кошелек" />
+
+    <item android:id="@+id/chatScreen"
+        android:icon="@drawable/ic_chat"
+        android:title="Чаты" />
+
+    <item android:id="@+id/userScreen"
+        android:icon="@drawable/ic_user"
+        android:title="Профиль" />
+
+
+
+
+
+</menu>
