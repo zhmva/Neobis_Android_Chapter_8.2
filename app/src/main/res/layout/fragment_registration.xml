@@ -64,33 +64,55 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
-    <EditText
-        android:id="@+id/username"
-        android:layout_width="320dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="50dp"
-        android:autofillHints="username"
-        android:hint="Имя пользователя"
-        android:inputType="textPersonName"
-        android:textColor="#C0C0C0"
-        app:layout_constraintEnd_toEndOf="parent"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:helperText=""
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/registration_title"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registration_title"
-        tools:ignore="HardcodedText,MissingConstraints,TextFields" />
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="320dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="30dp"
-        android:autofillHints="emailAddress"
-        android:hint="Почта"
-        android:inputType="textEmailAddress"
-        android:textColor="#C0C0C0"
-        app:layout_constraintEnd_toEndOf="parent"
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:autofillHints="username"
+            android:hint="Имя пользователя"
+            android:inputType="textPersonName"
+            android:textColor="#C0C0C0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registration_title"
+            tools:ignore="HardcodedText,MissingConstraints,TextFields" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:helperText=""
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/usernameContainer"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username"
-        tools:ignore="HardcodedText,MissingConstraints,TextFields" />
+        app:layout_constraintEnd_toEndOf="parent">
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:autofillHints="emailAddress"
+            android:hint="Почта"
+            android:inputType="textEmailAddress"
+            android:textColor="#C0C0C0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username"
+            tools:ignore="HardcodedText,MissingConstraints,TextFields" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/button_next"

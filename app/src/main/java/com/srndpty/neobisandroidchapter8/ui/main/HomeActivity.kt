@@ -17,7 +17,7 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
-            setContentView(binding.root)
+         setContentView(binding.root)
 
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.hostFragment) as NavHostFragment
@@ -27,7 +27,7 @@ class HomeActivity : AppCompatActivity() {
         bottomNavigationView.setupWithNavController(navController)
 
         val floatingActionButton = findViewById<FloatingActionButton>(R.id.floatingActionButton)
-        floatingActionButton.setOnClickListener{
+        floatingActionButton.setOnClickListener {
             navController.navigate(R.id.addProductFragment)
         }
 
@@ -38,22 +38,35 @@ class HomeActivity : AppCompatActivity() {
                     true
                 }
                 R.id.userScreen -> {
-                    navController.navigate(R.id.else -> false
+                    navController.navigate(R.id.profileFragment)
+                    true
+                }
+                R.id.chatScreen -> {
+                    navController.navigate(R.id.chatFragment)
+                    true
+                }
+                R.id.walletScreen -> {
+                    navController.navigate(R.id.walletFragment)
+                    true
+                }
+                else -> false
             }
         }
-    }
 
-        fun hideBottomNav(){
+        fun hideBottomNav() {
             val navBar = findViewById<View>(R.id.nav_bar)
             val floatBtn = findViewById<FloatingActionButton>(R.id.floatingActionButton)
             navBar.visibility = View.GONE
             floatBtn.visibility = View.GONE
         }
 
-        fun showBottomNav(){
+        fun showBottomNav() {
             val navBar = findViewById<View>(R.id.nav_bar)
             val floatBtn = findViewById<FloatingActionButton>(R.id.floatingActionButton)
             navBar.visibility = View.VISIBLE
             floatBtn.visibility = View.VISIBLE
         }
+    }
 }
+
+

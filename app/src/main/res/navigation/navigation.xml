@@ -9,22 +9,35 @@
         android:id="@+id/loginFragment"
         android:name="com.srndpty.neobisandroidchapter8.ui.login.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
-    <fragment
-        android:id="@+id/registrationFragment"
-        android:name="com.srndpty.neobisandroidchapter8.ui.registration.RegistrationFragment"
-        android:label="fragment_registration"
-        tools:layout="@layout/fragment_registration" />
-    <fragment
-        android:id="@+id/addNumberFragment"
-        android:name="com.srndpty.neobisandroidchapter8.ui.registration.AddNumberFragment"
-        android:label="fragment_add_number"
-        tools:layout="@layout/fragment_add_number" />
+        tools:layout="@layout/fragment_login" >
+
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+
+    </fragment>
+
     <fragment
         android:id="@+id/createPasswordFragment"
         android:name="com.srndpty.neobisandroidchapter8.ui.registration.CreatePasswordFragment"
         android:label="fragment_create_password"
         tools:layout="@layout/fragment_create_password" />
+
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.srndpty.neobisandroidchapter8.ui.registration.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration">
+        <action
+            android:id="@+id/action_registrationFragment_to_createPasswordFragment"
+            app:destination="@id/createPasswordFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addNumberFragment"
+        android:name="com.srndpty.neobisandroidchapter8.ui.registration.AddNumberFragment"
+        android:label="fragment_add_number"
+        tools:layout="@layout/fragment_add_number" />
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.srndpty.neobisandroidchapter8.ui.profile.ProfileFragment"
@@ -70,4 +83,19 @@
         android:name="com.srndpty.neobisandroidchapter8.ui.products.MyProductsFragment"
         android:label="fragment_my_products"
         tools:layout="@layout/fragment_my_products" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.srndpty.neobisandroidchapter8.ui.chat.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/walletFragment"
+        android:name="com.srndpty.neobisandroidchapter8.ui.wallet.WalletFragment"
+        android:label="fragment_wallet"
+        tools:layout="@layout/fragment_wallet" />
+    <activity
+        android:id="@+id/splashScreenActivity"
+        android:name="com.srndpty.neobisandroidchapter8.ui.splash.SplashScreenActivity"
+        android:label="activity_splash_screen"
+        tools:layout="@layout/activity_splash_screen" />
 </navigation>
